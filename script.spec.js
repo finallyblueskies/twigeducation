@@ -18,6 +18,11 @@ describe("Should group array elements as intended", () => {
       [5, 6],
     ]);
   });
+  it("Does not group if length is 0", () => {
+    expect(groupArrayElements([1, 2, 3, 4, 5, 6], 0)).toEqual([
+      1, 2, 3, 4, 5, 6,
+    ]);
+  });
   it("Should handle empty array", () => {
     expect(groupArrayElements([], 4)).toEqual([]);
   });
