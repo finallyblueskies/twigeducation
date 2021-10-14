@@ -11,10 +11,10 @@ const groupArrayElements = (arr, arrLength) => {
 	let groupArr = [];
 
 	if (isNaN(arrLength) || typeof arrLength !== "number" || arrLength < 0) {
-		throw new TypeError("groupArrayElements - arrLength is not a number over 0");
+		throw new TypeError("groupArrayElements - arrLength is not a number 0+");
 	}
 
-	if (arrLength <= 0) {
+	if (arrLength === 0) {
 		return arr;
 	}
 	
