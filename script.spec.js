@@ -21,8 +21,8 @@ describe("Should group array elements as intended", () => {
   it("Should handle empty array", () => {
     expect(groupArrayElements([], 4)).toEqual([]);
   });
-	it("Should throw on invalid arrLength param", () => {
+  it("Should throw on invalid arrLength param", () => {
     expect(() => groupArrayElements([1, 2, 3], null)).toThrow();
     expect(() => groupArrayElements([1, 2, 3], -1)).toThrow();
-	});
+  });
 });
